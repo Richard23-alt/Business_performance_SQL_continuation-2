@@ -17,8 +17,22 @@ An SQL analysis of 1,200 e-commerce orders (January 2023 to June 2025), looking 
 SQL (PostgreSQL), written and run in Visual Studio Code.
 
 ## Dataset
+*Database creation code:
+```SQL
+CREATE DATABASE "Decodelabs dataset"
+```
+Table creation code:
+```SQL
+CREATE TABLE public.Salesreport
+(Order_id TEXT,Date DATE,customer_id TEXT,Product VARCHAR(30),Quantity INT,Unitprice NUMERIC,Shipping_address TEXT,
+Payment_method VARCHAR(30),Order_status VARCHAR(30),Tracking_number TEXT,Itemsincart INT,
+Coupon_code VARCHAR(20),Referral_source VARCHAR(30),Total_price NUMERIC )
+```
 
-`data/sales_orders.csv`: 1,200 orders and 1,189 unique customers, loaded into a table called `salesreport`.
+
+
+
+ 1,200 orders and 1,189 unique customers, loaded into a table called `salesreport`.
 
 | Column | Description |
 |---|---|
@@ -27,8 +41,6 @@ SQL (PostgreSQL), written and run in Visual Studio Code.
 | total_price | Order value (quantity × unit price) |
 | payment_method | Cash, Credit Card, Debit Card, Gift Card, Online |
 | order_status | Delivered, Shipped, Pending, Cancelled, Returned |
-
-"Revenue" here means order value (`total_price`). **Fulfilled** = Delivered + Shipped. **Lost** = Cancelled + Returned.
 
 
 
@@ -105,7 +117,7 @@ GROUP BY
 customer_id,order_id,quantity,unitprice;
 ```
 
-![Repeat customers](charts/04_repeat_customers.png)
+![Repeat customers](04_repeat_customers.png)
 
 | Customer | Orders | Total spent |
 |---|---:|---:|
