@@ -70,7 +70,7 @@ payment_method,order_status,quantity
 
 ## 2. Payment method and cancellations / returns
 
-![Cancelled and returned orders by payment method](charts/03_payment_method_cancelled_returned.png)
+![Cancelled and returned orders by payment method](03_payment_method_cancelled_returned.png)
 
 | Payment method | Cancelled | Returned | Total | Orders | Rate |
 |---|---:|---:|---:|---:|---:|
