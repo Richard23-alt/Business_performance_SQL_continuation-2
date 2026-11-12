@@ -47,7 +47,7 @@ GROUP BY
 payment_method,order_status,quantity
 ```
 
-![Revenue by order status](charts/01_revenue_by_status.png)
+![Revenue by order status](01_revenue_by_status.png)
 
 | Status | Orders | Revenue | Share | Avg order value |
 |---|---:|---:|---:|---:|
@@ -57,7 +57,7 @@ payment_method,order_status,quantity
 | Returned | 247 | $243,277.70 | 19.2% | $984.93 |
 | Delivered | 231 | $242,600.32 | 19.2% | $1,050.22 |
 
-![Fulfilled vs lost vs pending](charts/02_fulfilled_vs_lost_vs_pending.png)
+![Fulfilled vs lost vs pending]()
 
 **Insights**
 
